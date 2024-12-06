@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoredboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard-wrapper">
+            <!-- Home side -->
+            <div class="score-container">
+                <!-- Team title -->
+                <h3>HOME</h3>
+                <!-- Team score -->
+                <p class="score" id="home-score">0</p>
+                <!-- Interactive score buttons -->
+                <div class="score-buttons">
+                    <button onclick="add1Home()">+1</button>
+                    <button onclick="add2Home()">+2</button>
+                    <button onclick="add3Home()">+3</button>
+                </div>
+                <div class="score-buttons-secondary">
+                    <button onclick="sub1Home()">-1</button>
+                    <button onclick="sub2Home()">-2</button>
+                    <button onclick="sub3Home()">-3</button>
+                </div>
+            </div>
+            <!-- Away side -->
+            <div class="score-container">
+                <!-- Team title -->
+                <h3>AWAY</h3>
+                <!-- Team score -->
+                <p class="score" id="away-score">0</p>
+                <!-- Interactive score buttons -->
+                <div class="score-buttons">
+                    <button onclick="add1Away()">+1</button>
+                    <button onclick="add2Away()">+2</button>
+                    <button onclick="add3Away()">+3</button>
+                </div>
+                <div class="score-buttons-secondary">
+                    <button onclick="sub1Away()">-1</button>
+                    <button onclick="sub2Away()">-2</button>
+                    <button onclick="sub3Away()">-3</button>
+                </div>
+            </div>
+        </div>
+        <button id="new-game-btn" onclick="newGame()">NEW GAME</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
